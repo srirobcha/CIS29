@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1515884763 source:c:\users\tsunderebacon\desktop\cis 29\ass1\dictionary.cpp
+
+1515884781 source:c:\users\tsunderebacon\desktop\cis 29\ass1\word.cpp
+
+1515897099 source:c:\users\tsunderebacon\desktop\cis 29\ass1\ass1.cpp
+	<iostream>
+	<fstream>
+	<string>
+	"Dictionary.h"
+	"Word.h"
+
+1515884519 c:\users\tsunderebacon\desktop\cis 29\ass1\dictionary.h
+	"Word.h"
+
+1515893131 c:\users\tsunderebacon\desktop\cis 29\ass1\word.h
+
