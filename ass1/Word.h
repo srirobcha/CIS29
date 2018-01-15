@@ -1,15 +1,25 @@
+#include <iostream>
+#include <cstring>
+#include <string>
+
 #ifndef WORD_H
 #define WORD_H
 
 class Word {
 private:
-    char* word;
+    //Members
+    char* word_;
 public:
-    Word(const char* text = 0);
+    //Constructors
+    Word();
+    Word(const char* text);
+    //Destructor
     ~Word();
-
-    const char* word() const;
-
+    //Getter
+    const char* getWord() const;
+    //Stream Operator
+    friend std::ostream& operator<< (std::ostream& out, const Word& cWord);
+    friend std::istream& operator>> (std::istream& in, Word& cWord);
 };
 
 #endif
