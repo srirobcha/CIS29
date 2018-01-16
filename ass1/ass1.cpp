@@ -18,14 +18,14 @@ const int wordSize = 30;
 
 
 int main() {
-    std::string dict;
-
+    char dict[50];
+//    char getty[50];
     Word text;
 
-//    std::cout << "Enter dictionary file path: ";
-//    getline(std::cin, dict);
-////    std::cout << "Enter word text file path: ";
-////    std::cin >> text;
+    std::cout << "Enter dictionary file path: ";
+    std::cin.getline(dict, 50);
+//    std::cout << "Enter Gettysburg text file path: ";
+//    std::cin >> getty;
 //    dictionaryFile.open(dict);
 //
 //    while (!dictionaryFile.is_open()) {
@@ -37,12 +37,7 @@ int main() {
 //    while (dictionaryFile >> text) {
 //        std::cout << text << std::endl;
 //    }
-
-    std::cout << "Enter text here: ";
-    std::cin >> text;
-    std::cout << text.getWord();
-
-
+    Dictionary Websters(dict);
 
     return 0;
 }
